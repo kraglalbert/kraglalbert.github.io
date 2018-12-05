@@ -15,8 +15,8 @@ permalink: /contact/
 
 div > .fa {
     padding: 10px;
-    font-size: 20px;
-    width: 40px;
+    font-size: 30px;
+    width: 50px;
     text-align: center;
 	text-decoration: none;
 	/* border-radius: 50%; */
