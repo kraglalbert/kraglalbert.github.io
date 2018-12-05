@@ -5,7 +5,7 @@ permalink: /resume/
 ---
 
 <style>
-.experience-img {max-width: 100px; max-height: 100px; margin-right: 15px;}
+.experience-img {max-width: 80px; max-height: 80px; margin-right: 25px; margin-top: 10px;}
 .experience-img-container {float:right; text-align: center;}
 .experience-title {position: relative; float: left;}
 .h-line {border-bottom: thick solid gray;}
