@@ -119,7 +119,7 @@ permalink: /resume/
 <div class="h-line"> </div>
 <h1>extracurriculars and awards:</h1>
 
-* **YouTube/Music:** Created a YouTube channel with over 20,000 subscribers and 5 million total views. Features original music and cover songs, with original songs available on all major streaming platforms.
-* **Ultimate Frisbee:** Varsity athlete and captain on the McGill Ultimate Team. Played on the BC provincial team for two years and won a silver medal at club nationals.
+* **YouTube/Music:** Created a <a href="https://www.youtube.com/user/TheFenderrocker" target="_blank">YouTube channel</a> with over 20,000 subscribers and 5 million total views. Features original music and cover songs, with original songs available on all major streaming platforms.
+* **Ultimate Frisbee:** Varsity athlete and captain on the McGill Ultimate Team. Won a <a href="http://ucm.canadianultimate.com/c/2018/10/23/2018-canadian-university-ultimate-championships-open-division-recap/" target="_blank">silver medal</a> at Canadian University Nationals in 2018.
 * **Excellence in Written Communication Award:** Awarded best research paper out of 259 students in CCOM 206 (Communication in Engineering) for Winter and Summer 2017 at McGill.
 * **Schulich Leader Scholarship:** Given to 50 students in Canada going into engineering and science studies every year.
