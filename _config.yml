@@ -2,7 +2,7 @@
 title_left    : "pert"
 title_right   : "sauce" # default: ""
 description   : "Albert Kragl"
-keywords      : "Jekyll, theme, free, download, SEO, blog, web, minimalist, thinkspace, albert, kragl, kraglalbert"
+keywords      : "Jekyll, theme, free, download, SEO, blog, web, minimalist, thinkspace, albert, kragl, kraglalbert, pertsauce, pert"
 url           : https://kraglalbert.github.io # site url
 baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
 cover         : "" # image uri like logo/cover image for site seo
@@ -11,7 +11,7 @@ google_analytics  : UA-130499534-1
 twitter_username  : ""
 comments_enabled  : true # if enabled (set to true), please provide your disqus_username
 disqus_shortname  : "albertkragl"
-postshare_enabled : false
+postshare_enabled : true
 
 # Build settings
 permalink   : /:year/:title/
