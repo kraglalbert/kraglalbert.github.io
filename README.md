@@ -2,4 +2,4 @@
 
 Personal website of Albert Kragl.
 
-Based on the <a href="https://github.com/heiswayi/thinkspace" target="_blank">thinkspace</a> Jekyll theme.
+Based on the [thinkspace](https://github.com/heiswayi/thinkspace) Jekyll theme.
