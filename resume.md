@@ -8,7 +8,7 @@ permalink: /resume/
 .experience-img {max-width: 80px; max-height: 80px; margin-right: 25px; margin-top: 10px;}
 .experience-img-container {float:right; text-align: center;}
 .experience-title {position: relative; float: left;}
-.education-text-container {float:right; text-align: right; word-break:break-all;}
+.education-text-container {float:right; text-align: right;}
 .h-line {border-bottom: thick solid gray;}
 .img-wrap {display: inline; position: relative;}
 .img__description {
@@ -29,7 +29,9 @@ permalink: /resume/
 .icon {max-width: 14.4%; margin: 5px;}
 .icon:hover {opacity: 0.7;}
 @media screen and (max-width: 480px) {
-    .sidebar-title {
+    .education-text-container {
+        float:right; 
+        text-align: right;
         width: 200px;
     }
 }
@@ -45,7 +47,7 @@ permalink: /resume/
         <p style="margin: 5px;">Montreal, QC</p>
         <p style="font-style: italic;">Sept. 2016 - Dec. 2020 [Expected]</p>
     </div>
-    <div class="sidebar-title">
+    <div>
         <h1>McGill University</h1>
         <p>B.S.E in Software Engineering; CGPA: 3.77</p>
     </div>
@@ -59,7 +61,7 @@ permalink: /resume/
     <div class="experience-img-container">
         <img src="{{site.baseurl}}/assets/images/ix-logo.png" class="experience-img">
     </div>
-    <div class="sidebar-title">
+    <div>
         <h1>Index Exchange</h1>
         <p>Software Engineer Intern — Montreal, QC</p>
         <p style="font-style: italic;">May 2018 - August 2018</p>
@@ -72,14 +74,14 @@ permalink: /resume/
 - **Agile:** Participated in scrum, code reviews and demos in an Agile setting.
 
 <div>
-    <span class="experience-img-container">
+    <div class="experience-img-container">
         <img src="{{site.baseurl}}/assets/images/nettwerk-logo.png" class="experience-img">
-    </span>
-    <span class="sidebar-title">
+    </div>
+    <div>
         <h1>Nettwerk Music Group</h1>
         <p>Data Analysis Intern — Vancouver, BC</p>
         <p style="font-style: italic;">Summer 2016, 2017</p>
-    </span>
+    </div>
 </div>
 
 - **Music Streaming Analytics:** Worked with Spotify and Apple Music data for various artists while also helping to expand the company’s streaming analytics department.
