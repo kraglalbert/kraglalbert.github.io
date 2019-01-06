@@ -8,6 +8,7 @@ permalink: /resume/
 .experience-img {max-width: 80px; max-height: 80px; margin-right: 25px; margin-top: 10px;}
 .experience-img-container {float:right; text-align: center;}
 .experience-title {position: relative; float: left;}
+.education-text-container {float:right; text-align: right; word-break:break-all;}
 .h-line {border-bottom: thick solid gray;}
 .img-wrap {display: inline; position: relative;}
 .img__description {
@@ -25,54 +26,75 @@ permalink: /resume/
     transition: opacity .2s, visibility .2s;
 }
 .img-wrap:hover .img__description {visibility: visible; opacity: 1;}
-.icon {max-width: 14%; margin: 5px;}
-.icon:hover { opacity: 0.7;}
-}}
+.icon {max-width: 14.4%; margin: 5px;}
+.icon:hover {opacity: 0.7;}
+@media screen and (max-width: 480px) {
+    .sidebar-title {
+        width: 200px;
+    }
+}
 </style>
 
 <div class="h-line">
     <p>or view/download the PDF version <a href="{{site.baseurl}}/Albert_Kragl_Resume.pdf" target="_blank">here</a></p>
-    <h1>experience:</h1>
+    <h1>education:</h1>
 </div>
 
-<div class="experience-item">
+<div>
+    <div class="education-text-container">
+        <p style="margin: 5px;">Montreal, QC</p>
+        <p style="font-style: italic;">Sept. 2016 - Dec. 2020 [Expected]</p>
+    </div>
+    <div class="sidebar-title">
+        <h1>McGill University</h1>
+        <p>B.S.E in Software Engineering; CGPA: 3.77</p>
+    </div>
+</div>
+
+<!-- Experience section -->
+<h1>experience:</h1>
+<div class="h-line"></div>
+
+<div>
     <div class="experience-img-container">
         <img src="{{site.baseurl}}/assets/images/ix-logo.png" class="experience-img">
     </div>
     <div class="sidebar-title">
         <h1>Index Exchange</h1>
-        <p><b>Software Engineer Intern — Montreal, QC</b></p>
-        <p><i>May 2018 - August 2018</i></p>
+        <p>Software Engineer Intern — Montreal, QC</p>
+        <p style="font-style: italic;">May 2018 - August 2018</p>
     </div>
 </div>
 
-* **Stream Processing Framework:** Created a streaming pipeline that abstracts consuming from Kafka and inserting into a time-series database, giving the user a simple API which can be used to configure custom data processing functionality. The framework will be used as a powerful telemetry tool to allow for more efficient debugging and feature implementation.
-* **Scalability:** Implemented a multi-threaded design to improve the scalability of the framework and increase the amount of data that can be processed at a time by over 50 percent.
-* **Docker:** Created a containerized development environment to allow for quick deployment and testing.
-* **Agile:** Participated in scrum, code reviews and demos in an Agile setting.
+- **Stream Processing Framework:** Created a streaming pipeline that abstracts consuming from Kafka and inserting into a time-series database, giving the user a simple API which can be used to configure custom data processing functionality. The framework will be used as a powerful telemetry tool to allow for more efficient debugging and feature implementation.
+- **Scalability:** Implemented a multi-threaded design to improve the scalability of the framework and increase the amount of data that can be processed at a time by over 50 percent.
+- **Docker:** Created a containerized development environment to allow for quick deployment and testing.
+- **Agile:** Participated in scrum, code reviews and demos in an Agile setting.
 
-<div class="experience-item">
-    <div class="experience-img-container">
+<div>
+    <span class="experience-img-container">
         <img src="{{site.baseurl}}/assets/images/nettwerk-logo.png" class="experience-img">
-    </div>
-    <div class="sidebar-title">
+    </span>
+    <span class="sidebar-title">
         <h1>Nettwerk Music Group</h1>
-        <p><b>Data Analysis Intern — Vancouver, BC</b></p>
-        <p><i>Summer 2016, 2017</i></p>
-    </div>
+        <p>Data Analysis Intern — Vancouver, BC</p>
+        <p style="font-style: italic;">Summer 2016, 2017</p>
+    </span>
 </div>
 
-* **Music Streaming Analytics:** Worked with Spotify and Apple Music data for various artists while also helping to expand the company’s streaming analytics department.
-* **Weekly Charting Reports:** Compiled various data sets, including artist radio and chart performance, for weekly company-wide reports.
+- **Music Streaming Analytics:** Worked with Spotify and Apple Music data for various artists while also helping to expand the company’s streaming analytics department.
+- **Weekly Charting Reports:** Compiled various data sets, including artist radio and chart performance, for weekly company-wide reports.
 
 <!-- Projects section -->
 <div class="h-line"></div>
 <h1>projects:</h1>
 
-* **Hack IX ’18:** Won 1st place with an app that used machine learning to analyze and offer feedback on a user’s speech patterns, with the main use case being a public speaking/presentation coaching tool.
-* **Profound Sound (iOS App):** Created to help amateur guitarists configure their guitar recording setup. Was available on the App Store from 2014 to 2016.
-* **Get J&uuml;ge (iOS App):** Created to help users track progress for each exercise in their workout.
-* **McGillUltimate.ca:** Part of the development team working on the <a href="https://mcgillultimate.ca" target="_blank">website</a> for McGill’s Ultimate Frisbee team.  
+- **Hack IX ’18:** Won 1st place with an app that used machine learning to analyze and offer feedback on a user’s speech patterns, with the main use case being a public speaking/presentation coaching tool.
+- **Profound Sound (iOS App):** Created to help amateur guitarists configure their guitar recording setup. Was available on the App Store from 2014 to 2016.
+- **Get J&uuml;ge (iOS App):** Created to help users track progress for each exercise in their workout.
+- **Roomie.io**: Developed a web application that allows roommates to keep track of shared expenses.
+- **git-simple**: Created a command-line tool with custom commands to simplify common git workflows and operations.
+- **McGillUltimate.ca:** Part of the development team working on the <a href="https://mcgillultimate.ca" target="_blank">website</a> for McGill’s Ultimate Frisbee team.
 
 <!-- Skills section -->
 <div class="h-line"></div>
@@ -87,20 +109,24 @@ permalink: /resume/
         <p class="img__description">Go</p>
     </div>
     <div class="img-wrap">
-        <img class="icon" src="{{site.baseurl}}/assets/images/python-logo.png">
-        <p class="img__description">Python</p>
-    </div>
-    <div class="img-wrap">
         <img class="icon" src="{{site.baseurl}}/assets/images/c-prog-logo.png">
         <p class="img__description">C</p>
     </div>
     <div class="img-wrap">
-        <img class="icon" src="{{site.baseurl}}/assets/images/git-logo.png">
-        <p class="img__description">Git</p>
+        <img class="icon" src="{{site.baseurl}}/assets/images/javascript-logo.png">
+        <p class="img__description">JavaScript</p>
+    </div> 
+    <div class="img-wrap">
+        <img class="icon" src="{{site.baseurl}}/assets/images/python-logo.png">
+        <p class="img__description">Python</p>
     </div>
     <div class="img-wrap">
         <img class="icon" src="{{site.baseurl}}/assets/images/bash-logo.png">
         <p class="img__description">BASH</p>
+    </div>
+    <div class="img-wrap">
+        <img class="icon" src="{{site.baseurl}}/assets/images/git-logo.png">
+        <p class="img__description">Git</p>
     </div>
     <div class="img-wrap">
         <img class="icon" src="{{site.baseurl}}/assets/images/kafka-logo.png">
@@ -111,6 +137,14 @@ permalink: /resume/
         <p class="img__description">Docker</p>
     </div>   
     <div class="img-wrap">
+        <img class="icon" src="{{site.baseurl}}/assets/images/react-logo.png">
+        <p class="img__description">React.js</p>
+    </div> 
+    <div class="img-wrap">
+        <img class="icon" src="{{site.baseurl}}/assets/images/node-logo.png">
+        <p class="img__description">Node.js</p>
+    </div> 
+    <div class="img-wrap">
         <img class="icon" src="{{site.baseurl}}/assets/images/influxdb-logo.png">
         <p class="img__description">InfluxDB</p>
     </div> 
@@ -119,7 +153,7 @@ permalink: /resume/
 <div class="h-line"> </div>
 <h1>extracurriculars and awards:</h1>
 
-* **YouTube/Music:** Created a <a href="https://www.youtube.com/user/TheFenderrocker" target="_blank">YouTube channel</a> with over 20,000 subscribers and 5 million total views. Features original music and cover songs, with original songs available on all major streaming platforms.
-* **Ultimate Frisbee:** Varsity athlete and captain on the McGill Ultimate Team. Won a <a href="http://ucm.canadianultimate.com/c/2018/10/23/2018-canadian-university-ultimate-championships-open-division-recap/" target="_blank">silver medal</a> at Canadian University Nationals in 2018.
-* **Excellence in Written Communication Award:** Awarded best research paper out of 259 students in CCOM 206 (Communication in Engineering) for Winter and Summer 2017 at McGill.
-* **Schulich Leader Scholarship:** Given to 50 students in Canada going into engineering and science studies every year.
+- **YouTube/Music:** Created a <a href="https://www.youtube.com/user/TheFenderrocker" target="_blank">YouTube channel</a> with over 20,000 subscribers and 5 million total views. Features original music and cover songs, with original songs available on all major streaming platforms.
+- **Ultimate Frisbee:** Varsity athlete and captain on the McGill Ultimate Team. Won a <a href="http://ucm.canadianultimate.com/c/2018/10/23/2018-canadian-university-ultimate-championships-open-division-recap/" target="_blank">silver medal</a> at Canadian University Nationals in 2018.
+- **Excellence in Written Communication Award:** Awarded best research paper out of 259 students in CCOM 206 (Communication in Engineering) for Winter and Summer 2017 at McGill.
+- **Schulich Leader Scholarship:** Given to 50 students in Canada going into engineering and science studies every year.
