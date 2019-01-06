@@ -32,7 +32,7 @@ permalink: /resume/
     .education-text-container {
         float:right; 
         text-align: right;
-        width: 200px;
+        width: 150px;
     }
 }
 </style>
