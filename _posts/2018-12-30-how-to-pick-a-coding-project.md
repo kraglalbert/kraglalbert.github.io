@@ -32,8 +32,8 @@ Honestly, there's a chance that this could even be true. Even though it may be t
 
 This can be tough to deal with, since it can seem like a lot of things have been done already or you think your idea just isn't very interesting. If you're trying to think of the next big business idea and make millions, then originality is definitely important. However, a coding project isn't nearly that intense. For the projects I've done in the past, my main way of generating ideas has been to think about which products I would actually use myself. As a musician and college student, these are some of the things I've worked on:
 
-* An iPhone app that helps users configure their recording setup
-* An iPhone app that allows the user to keep track of their workout exercises, and how much weight they currently do for each exercise
-* A web app that allows roommates to keep track of shared expenses and how much everyone owes each other
+- An iPhone app that helps users configure their music/audio recording setup
+- An iPhone app that allows the user to keep track of their workout exercises, and how much weight they currently do for each exercise
+- A web app that allows roommates to keep track of shared expenses and how much everyone owes each other
 
 Now I'm not saying that these are amazing projects or anything, since there are a lot of way cooler and more impressive things that other people have worked on. However, these are all things that I would actually use in my day-to-day life, and this also makes the projects more meaningful to me. This can really make a project stand out, and your passion for the project will come naturally as well. If you're thinking of ways to pick a coding project to do, try thinking about what you would personally use, and then build it!
