@@ -45,7 +45,7 @@ permalink: /resume/
 <div>
     <div class="education-text-container">
         <p style="margin: 5px;">Montreal, QC</p>
-        <p style="font-style: italic;">Sept. 2016 - Dec. 2020 [Expected]</p>
+        <p style="font-style: italic;">Sept. 2016 - Apr. 2021 [Expected]</p>
     </div>
     <div>
         <h1>McGill University</h1>
