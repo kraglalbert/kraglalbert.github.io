@@ -49,13 +49,40 @@ permalink: /resume/
     </div>
     <div>
         <h1>McGill University</h1>
-        <p>B.S.E in Software Engineering; CGPA: 3.77</p>
+        <p>B.S.E in Software Engineering; CGPA: 3.80 / 4.00</p>
     </div>
 </div>
 
 <!-- Experience section -->
 <h1>experience:</h1>
 <div class="h-line"></div>
+
+<div>
+    <div class="experience-img-container">
+        <img src="{{site.baseurl}}/assets/images/mcgill-logo.png" class="experience-img">
+    </div>
+    <div>
+        <h1>McGill University</h1>
+        <p>Undergraduate Teaching Assistant — Montreal, QC</p>
+        <p style="font-style: italic;">September 2019 - December 2019</p>
+    </div>
+</div>
+
+- **Project Mentor:** Held weekly office hours and answered discussion board questions for ECSE 321 - Intro. to Software Engineering.
+
+<div>
+    <div class="experience-img-container">
+        <img src="{{site.baseurl}}/assets/images/facebook-logo.png" class="experience-img">
+    </div>
+    <div>
+        <h1>Facebook</h1>
+        <p>Software Engineer Intern — Menlo Park, CA</p>
+        <p style="font-style: italic;">May 2019 - August 2019</p>
+    </div>
+</div>
+
+- **Zero Rating Infra:** Worked with the Zero Rating Infra team to drive core product growth in developing countries, accounting for over a third of total company growth.
+- **Mobile Carriers:** Updated carrier configuration storage to improve performance and reliability, and securely store passwords and encrypted data. Rolled changes out to production and reduced CPU usage by 40 percent.
 
 <div>
     <div class="experience-img-container">
@@ -103,24 +130,24 @@ permalink: /resume/
 <h1>skills:</h1>
 <div style="margin-bottom: 15px;">
     <div class="img-wrap">
-        <img class="icon" src="{{site.baseurl}}/assets/images/java-logo.png">
-        <p class="img__description">Java</p>
+        <img class="icon" src="{{site.baseurl}}/assets/images/python-logo.png">
+        <p class="img__description">Python</p>
     </div>
     <div class="img-wrap">
-        <img class="icon" src="{{site.baseurl}}/assets/images/golang-logo.png">
-        <p class="img__description">Go</p>
+        <img class="icon" src="{{site.baseurl}}/assets/images/javascript-logo.png">
+        <p class="img__description">JavaScript</p>
+    </div>
+    <div class="img-wrap">
+        <img class="icon" src="{{site.baseurl}}/assets/images/java-logo.png">
+        <p class="img__description">Java</p>
     </div>
     <div class="img-wrap">
         <img class="icon" src="{{site.baseurl}}/assets/images/c-prog-logo.png">
         <p class="img__description">C</p>
     </div>
     <div class="img-wrap">
-        <img class="icon" src="{{site.baseurl}}/assets/images/javascript-logo.png">
-        <p class="img__description">JavaScript</p>
-    </div> 
-    <div class="img-wrap">
-        <img class="icon" src="{{site.baseurl}}/assets/images/python-logo.png">
-        <p class="img__description">Python</p>
+        <img class="icon" src="{{site.baseurl}}/assets/images/golang-logo.png">
+        <p class="img__description">Go</p>
     </div>
     <div class="img-wrap">
         <img class="icon" src="{{site.baseurl}}/assets/images/bash-logo.png">
@@ -137,24 +164,33 @@ permalink: /resume/
     <div class="img-wrap">
         <img class="icon" src="{{site.baseurl}}/assets/images/docker-logo.png">
         <p class="img__description">Docker</p>
-    </div>   
+    </div>
     <div class="img-wrap">
-        <img class="icon" src="{{site.baseurl}}/assets/images/react-logo.png">
-        <p class="img__description">React.js</p>
-    </div> 
+        <img class="icon" src="{{site.baseurl}}/assets/images/postgres-logo.png">
+        <p class="img__description">PostreSQL</p>
+    </div>
+    <div class="img-wrap">
+        <img class="icon" src="{{site.baseurl}}/assets/images/flask-logo.png">
+        <p class="img__description">Flask</p>
+    </div>
     <div class="img-wrap">
         <img class="icon" src="{{site.baseurl}}/assets/images/node-logo.png">
         <p class="img__description">Node.js</p>
-    </div> 
+    </div>
     <div class="img-wrap">
-        <img class="icon" src="{{site.baseurl}}/assets/images/influxdb-logo.png">
-        <p class="img__description">InfluxDB</p>
-    </div> 
+        <img class="icon" src="{{site.baseurl}}/assets/images/vue-logo.png">
+        <p class="img__description">Vue.js</p>
+    </div>
+    <div class="img-wrap">
+        <img class="icon" src="{{site.baseurl}}/assets/images/react-logo.png">
+        <p class="img__description">React</p>
+    </div>
 </div> 
 <!-- Extracurriculars section -->
 <div class="h-line"> </div>
 <h1>extracurriculars and awards:</h1>
 
+- **Hack4Impact McGill:** President and co-founder of the Hack4Impact chapter at McGill University, which builds software for non-profit organizations to help drive positive social impact.
 - **YouTube/Music:** Created a <a href="https://www.youtube.com/user/TheFenderrocker" target="_blank">YouTube channel</a> with over 20,000 subscribers and 5 million total views. Features original music and cover songs, with original songs available on all major streaming platforms.
 - **Ultimate Frisbee:** Varsity athlete and captain on the McGill Ultimate Team. Won a <a href="http://ucm.canadianultimate.com/c/2018/10/23/2018-canadian-university-ultimate-championships-open-division-recap/" target="_blank">silver medal</a> at Canadian University Nationals in 2018.
 - **Excellence in Written Communication Award:** Awarded best research paper out of 259 students in CCOM 206 (Communication in Engineering) for Winter and Summer 2017 at McGill.
