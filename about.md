@@ -4,7 +4,7 @@ title: about
 permalink: /about/
 ---
 
-I'm a third-year undergraduate student at McGill University, currently studying Software Engineering. I also do music and ultimate frisbee.
+I'm a fourth-year undergraduate student at McGill University, currently studying Software Engineering. I also do music and ultimate frisbee.
 
 <br>
 
@@ -20,7 +20,7 @@ My first proper experience with programming came in my second semester of first 
 
 I did my first software internship in summer 2018 at a small but fast-growing adtech company, which was a great experience. I learned a lot in the span of a few months and got a glimpse into what the real world of software development was like. It was around this time I decided to switch into Software Engineering as well, and I've had no regrets so far.
 
-I'll also be a Software Engineer Intern at Facebook this upcoming summer, which I'm super excited about!
+I was a Software Engineer Intern at Facebook this past summer at their Menlo Park office, and I'll be returning as an intern in Seattle next summer.
 
 <br>
 #### music:

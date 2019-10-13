@@ -42,7 +42,7 @@ permalink: /resume/
     <h1>education:</h1>
 </div>
 
-<div>
+<div style="margin-bottom: 50px;">
     <div class="education-text-container">
         <p style="margin: 5px;">Montreal, QC</p>
         <p style="font-style: italic;">Sept. 2016 - Apr. 2021 [Expected]</p>
@@ -119,9 +119,9 @@ permalink: /resume/
 <h1>projects:</h1>
 
 - **Hack IX ’18:** Won 1st place with an app that used machine learning to analyze and offer feedback on a user’s speech patterns, with the main use case being a public speaking/presentation coaching tool.
+- **Budgie**: Developed a web application that allows individuals to keep track of their monthly expenses.
 - **Profound Sound (iOS App):** Created to help amateur guitarists configure their guitar recording setup. Was available on the App Store from 2014 to 2016.
 - **Get J&uuml;ge (iOS App):** Created to help users track progress for each exercise in their workout.
-- **Roomie.io**: Developed a web application that allows roommates to keep track of shared expenses.
 - **git-simple**: Created a command-line tool with custom commands to simplify common git workflows and operations.
 - **McGillUltimate.ca:** Part of the development team working on the <a href="https://mcgillultimate.ca" target="_blank">website</a> for McGill’s Ultimate Frisbee team.
 
