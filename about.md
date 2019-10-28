@@ -9,7 +9,7 @@ I'm a fourth-year undergraduate student at McGill University, currently studying
 <br>
 
 <p align="right">
-    <img src ="{{site.baseurl}}/assets/images/me-circle.jpg" style="display: block; margin-left: auto; margin-right: auto; width:25%;min-width: 200px;"/>
+    <img src ="{{site.baseurl}}/assets/images/me-circle-1000x1000.png" style="display: block; margin-left: auto; margin-right: auto; width:25%;min-width: 200px;"/>
 </p>
 
 #### tech:
