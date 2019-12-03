@@ -2,7 +2,7 @@
 layout: post
 title: "Internships: The LeetCode Grind"
 comments: true
-description: ""
+description: "My experience with preparing for technical interviews, and the things I learned along the way."
 keywords: "blog, internship, intern, internships, leetcode, grind, interviews"
 ---
 

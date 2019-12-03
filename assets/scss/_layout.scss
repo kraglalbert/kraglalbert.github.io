@@ -185,6 +185,11 @@ hr {
   @extend .link;
 }
 
+.post-description {
+  color: $medium-gray-color;
+  font-size: rem(14);
+}
+
 .post {
   @extend .clearfix;
 }

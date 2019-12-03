@@ -39,7 +39,9 @@ plugins:
 navbar:
   - slug : about
     title: About
-  - slug : blog
-    title: Blog
+  - slug : resume
+    title: Resume
+  - slug : contact
+    title: Contact
 
 exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md", "script"]

@@ -2,7 +2,7 @@
 layout: post
 title: "How to Pick a Coding Project"
 comments: true
-description: ""
+description: "What should you build?"
 keywords: "blog, coding, project, personal, resume, internship, internships"
 ---
 
