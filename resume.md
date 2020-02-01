@@ -49,7 +49,7 @@ permalink: /resume/
     </div>
     <div>
         <h1>McGill University</h1>
-        <p>B.S.E in Software Engineering; CGPA: 3.80 / 4.00</p>
+        <p>B.S.E in Software Engineering; CGPA: 3.81 / 4.00</p>
     </div>
 </div>
 
@@ -64,11 +64,11 @@ permalink: /resume/
     <div>
         <h1>McGill University</h1>
         <p>Undergraduate Teaching Assistant — Montreal, QC</p>
-        <p style="font-style: italic;">September 2019 - December 2019</p>
+        <p style="font-style: italic;">September 2019 - April 2020</p>
     </div>
 </div>
 
-- **Project Mentor:** Held weekly office hours and answered discussion board questions for ECSE 321 - Intro. to Software Engineering.
+- **Project Mentor:** Held weekly office hours, answered discussion board questions and graded the midterm for ECSE 321 - Intro. to Software Engineering.
 
 <div>
     <div class="experience-img-container">
@@ -119,6 +119,7 @@ permalink: /resume/
 <h1>projects:</h1>
 
 - **Hack IX ’18:** Won 1st place with an app that used machine learning to analyze and offer feedback on a user’s speech patterns, with the main use case being a public speaking/presentation coaching tool.
+- **CodeJam 2019:** Won 2st place overall with a machine learning web app that allows users to streamline home insurance claims by uploading photos of items in their home and getting an estimate for the value of each item in the photo.
 - **Budgie**: Developed a web application that allows individuals to keep track of their monthly expenses.
 - **Profound Sound (iOS App):** Created to help amateur guitarists configure their guitar recording setup. Was available on the App Store from 2014 to 2016.
 - **Get J&uuml;ge (iOS App):** Created to help users track progress for each exercise in their workout.
