@@ -1,0 +1,219 @@
+<!DOCTYPE html> <html> <head> <meta charset="utf-8"> <meta name="apple-mobile-web-app-capable" content="yes"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title> Getting Started with Cucumber | pertsauce </title> <link rel="apple-touch-icon" sizes="180x180" href="/favicon/favicon-180x180.png"> <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png"> <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png"> <meta name="description" content=" Want to spice up your test suite? Get the non-technical stakeholders involved. "> <meta name="keywords" content="cucumber, gherkin, acceptance tests, testing"> <meta name="HandheldFriendly" content="True"> <meta name="MobileOptimized" content="320"> <!-- Social: Facebook / Open Graph --> <meta property="og:type" content="article"> <meta property="article:author" content="Albert Kragl"> <meta property="article:section" content=""> <meta property="article:tag" content="cucumber, gherkin, acceptance tests, testing"> <meta property="article:published_time" content="2020-03-16 00:00:00 -0400"> <meta property="og:url" content="http://localhost:4000/2020/getting-started-with-cucumber/"> <meta property="og:title" content=" Getting Started with Cucumber | pertsauce "> <meta property="og:image" content="http://localhost:4000"> <meta property="og:description" content=" Want to spice up your test suite? Get the non-technical stakeholders involved. "> <meta property="og:site_name" content="Albert Kragl"> <meta property="og:locale" content="en_US"> <!-- Social: Twitter --> <meta name="twitter:card" content="summary_large_image"> <meta name="twitter:site" content=""> <meta name="twitter:title" content=" Getting Started with Cucumber | pertsauce "> <meta name="twitter:description" content=" Want to spice up your test suite? Get the non-technical stakeholders involved. "> <meta name="twitter:image:src" content="http://localhost:4000"> <!-- Social: Google+ / Schema.org --> <meta itemprop="name" content=" Getting Started with Cucumber | pertsauce "> <meta itemprop="description" content=" Want to spice up your test suite? Get the non-technical stakeholders involved. "> <meta itemprop="image" content="http://localhost:4000"> <!-- Canonical link tag --> <link rel="canonical" href="http://localhost:4000/2020/getting-started-with-cucumber/"> <link rel="alternate" type="application/rss+xml" title="pertsauce" href="http://localhost:4000/feed.xml"> <!-- rel prev and next --> <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css"> </head> <body> <main class="wrapper"> <header class="site-header"> <nav class="nav"> <div class="container"> <h1 class="logo"><a href="http://localhost:4000/">pert<span>sauce</span></a></h1> <ul class="navbar"> <li><a href="http://localhost:4000/about">About</a></li> <li><a href="http://localhost:4000/resume">Resume</a></li> <li><a href="http://localhost:4000/contact">Contact</a></li> </ul> </div> </nav> </header> <article class="post container" itemscope itemtype="http://schema.org/BlogPosting" > <header class="post-header"> <p class="post-meta"> <time datetime="2020-03-16T00:00:00-04:00" itemprop="datePublished" > Mar 16, 2020 </time> <span>&middot; 5 minute read</span> </p> <h1 class="post-title" itemprop="name headline">Getting Started with Cucumber</h1> </header> <div class="post-content" itemprop="articleBody"> <ol> <li> <p><a href="#why-use-cucumber">Why Use Cucumber?</a></p> </li> <li> <p><a href="#gherkin">Gherkin</a></p> </li> <li> <p><a href="#cucumber-with-java-spring">Cucumber with Java Spring</a></p> </li> <li> <p><a href="#cucumber-with-flask">Cucumber with Flask</a></p> </li> <li> <p><a href="#conclusion">Conclusion</a></p> </li> </ol> <p>A few months ago I started using <a href="https://cucumber.io/">Cucumber</a> for the first time. The concept is fairly straightforward: tests are centered around feature files, which are written in plain English. The feature files make use of Gherkin, which is the syntax for writing them. A few keywords are used to trigger actual code in your Cucumber tests, so that tests can be connected to the feature requirements for your application. This is a great way to ensure that your application is meeting all of its requirements.</p> <h2 id="why-use-cucumber">Why Use Cucumber?</h2> <p>Cucumber tests are really integration tests, since they (likely) test your application without mocking anything. However, while normal integration tests can verify that various components work together, Cucumber tests can verify that these components work together <em>to implement a certain feature successfully</em>.</p> <p>The other added benefit is that feature files are written in plain English, so non-technical stakeholders can easily understand them and feel more confident that their requirements are being met.</p> <h2 id="gherkin">Gherkin</h2> <p>In this post I’ll go over setting up Cucumber in Java (in a Spring project) as well as in Python (in a Flask project). But before we do that, let’s take a look at the basics of Gherkin syntax.</p> <p>Here’s an example feature file:</p> <div class="language-cucumber highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">Feature</span><span class="p">:</span> a User can list an item for sale
+
+    This is a description of the feature. It will not run any
+    code, but it can be used to give more context for the feature.
+
+    <span class="kn">Scenario</span><span class="p">:</span> User uploads a new item for sale
+        <span class="nf">Given </span>the User is logged in
+        <span class="nf">When </span>the User enters information about their item
+        <span class="nf">Then </span>the item is posted for sale
+
+    <span class="kn">Scenario</span><span class="p">:</span> User edits an existing item for sale
+        <span class="nf">Given </span>the User is logged in
+        <span class="nf">And </span>has an existing item listed for sale
+        <span class="nf">When </span>the User edits information about their item
+        <span class="nf">Then </span>the item posting is updated
+</code></pre></div></div> <p>Let’s break this down. At the very top, the <code class="highlighter-rouge">Feature</code> keyword lets us know that this is a Cucumber feature. Below that, you can write a description of the feature, but this isn’t required. The <code class="highlighter-rouge">Scenario</code> keyword defines a scenario, which is how test cases in a Cucumber feature can be organized. A feature file can have multiple scenarios; the example above has 2. Feature files are saved with the <code class="highlighter-rouge">.feature</code> extension, e.g. <code class="highlighter-rouge">list_item_for_sale.feature</code>.</p> <p>The highlighted words within each scenario highlight the <strong>Given-When-Then</strong> flow that occurs within a scenario. These are known as steps in a scenario. The <code class="highlighter-rouge">Given</code> block is used as a setup for the scenario, i.e. what needs to already be true before the scenario can occur. The <code class="highlighter-rouge">When</code> block describes the action that causes the scenario to occur. Lastly, the <code class="highlighter-rouge">Then</code> block describes the expected outcome.</p> <p>In addition to the three main step keywords, Gherkin also supports <code class="highlighter-rouge">And</code> and <code class="highlighter-rouge">But</code> as keywords. These are typically used to make a scenario more readable; an example can be scene in the second scenario above.</p> <p>These are just the basics, but it’s enough to get started. For the full Gherkin syntax reference, check out the <a href="https://cucumber.io/docs/gherkin/reference/">official documentation</a>.</p> <h2 id="cucumber-with-java-spring">Cucumber with Java Spring</h2> <p>Cucumber offers official support for several different languages, and Java is one of them. For this post we’ll assume we have a standard Spring Boot project with the following structure:</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|-- pom.xml
+|-- src/
+    |-- main/
+        |-- ... application code ...
+    |-- test/
+        |-- pkg/app-tests/
+            |-- cucumber/
+                |-- CucumberIT.java
+                |-- CucumberContextConfiguration.java
+                |-- ListItemForSaleIT.java
+            |-- ApplicationTests.java
+        |-- resources/
+            |-- features/
+                |-- list_item_for_sale.feature
+</code></pre></div></div> <p>I’ll describe how you can run the tests using Maven, but you can use other build tools such as Gradle as well. To get Maven set up to run Cucumber, add the following to your <code class="highlighter-rouge">pom.xml</code>:</p> <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;dependencies&gt;</span>
+    <span class="nt">&lt;dependency&gt;</span>
+      <span class="nt">&lt;groupId&gt;</span>io.cucumber<span class="nt">&lt;/groupId&gt;</span>
+      <span class="nt">&lt;artifactId&gt;</span>cucumber-java8<span class="nt">&lt;/artifactId&gt;</span>
+      <span class="nt">&lt;version&gt;</span>4.8.0<span class="nt">&lt;/version&gt;</span>
+      <span class="nt">&lt;scope&gt;</span>test<span class="nt">&lt;/scope&gt;</span>
+    <span class="nt">&lt;/dependency&gt;</span>
+    <span class="nt">&lt;dependency&gt;</span>
+      <span class="nt">&lt;groupId&gt;</span>io.cucumber<span class="nt">&lt;/groupId&gt;</span>
+      <span class="nt">&lt;artifactId&gt;</span>cucumber-spring<span class="nt">&lt;/artifactId&gt;</span>
+      <span class="nt">&lt;version&gt;</span>4.8.0<span class="nt">&lt;/version&gt;</span>
+      <span class="nt">&lt;scope&gt;</span>test<span class="nt">&lt;/scope&gt;</span>
+    <span class="nt">&lt;/dependency&gt;</span>
+    <span class="nt">&lt;dependency&gt;</span>
+      <span class="nt">&lt;groupId&gt;</span>io.cucumber<span class="nt">&lt;/groupId&gt;</span>
+      <span class="nt">&lt;artifactId&gt;</span>cucumber-junit<span class="nt">&lt;/artifactId&gt;</span>
+      <span class="nt">&lt;version&gt;</span>4.8.0<span class="nt">&lt;/version&gt;</span>
+      <span class="nt">&lt;scope&gt;</span>test<span class="nt">&lt;/scope&gt;</span>
+    <span class="nt">&lt;/dependency&gt;</span>
+<span class="nt">&lt;/dependencies&gt;</span>
+...
+<span class="nt">&lt;build&gt;</span>
+    <span class="nt">&lt;pluginManagement&gt;</span>
+        <span class="nt">&lt;plugins&gt;</span>
+            <span class="nt">&lt;plugin&gt;</span>
+                <span class="nt">&lt;groupId&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupId&gt;</span>
+                <span class="nt">&lt;artifactId&gt;</span>maven-failsafe-plugin<span class="nt">&lt;/artifactId&gt;</span>
+            <span class="nt">&lt;/plugin&gt;</span>
+        <span class="nt">&lt;/plugins&gt;</span>
+    <span class="nt">&lt;/pluginManagement&gt;</span>
+<span class="nt">&lt;/build&gt;</span>
+</code></pre></div></div> <p>Note that at the time of writing, 4.8.0 was the latest version of Cucumber for Maven; there may be newer versions available now.</p> <blockquote> <p>Side note: if you see files that end with <code class="highlighter-rouge">IT.java</code>, the IT is short for “integration test” and this is the default thing that the <code class="highlighter-rouge">maven-failsafe</code> plugin looks for when scanning for tests to run.</p> </blockquote> <p>Next, we’ll use the example feature file from before as our feature and put it under <code class="highlighter-rouge">src/test/resources/features</code>. Once that’s done, we can start writing the actual test files. We’ll take a look at the <code class="highlighter-rouge">CucumberIT.java</code> file first:</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="n">pkg</span><span class="o">.</span><span class="na">cucumber</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">io.cucumber.junit.Cucumber</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">io.cucumber.junit.CucumberOptions</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.junit.runner.RunWith</span><span class="o">;</span>
+
+<span class="cm">/** Configuration for Cucumber tests */</span>
+<span class="nd">@RunWith</span><span class="o">(</span><span class="n">Cucumber</span><span class="o">.</span><span class="na">class</span><span class="o">)</span>
+<span class="nd">@CucumberOptions</span><span class="o">(</span>
+        <span class="n">features</span> <span class="o">=</span> <span class="s">"classpath:features"</span><span class="o">,</span>
+        <span class="n">plugin</span> <span class="o">=</span> <span class="o">{</span><span class="s">"pretty"</span><span class="o">,</span> <span class="s">"json:target/cucumber-report.json"</span><span class="o">})</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">CucumberIT</span> <span class="o">{}</span>
+</code></pre></div></div> <p>This file defines two important things:</p> <ul> <li>How the Cucumber tests should be run: <code class="highlighter-rouge">@RunWith(Cucumber.class)</code></li> <li>Where they can be found: <code class="highlighter-rouge">features = "classpath:features"</code></li> </ul> <p>Additionally, we also make use of the <code class="highlighter-rouge">pretty</code> plugin to make the test outputs a little nicer. Next, we make a file that configures the Spring context for all of our Cucumber tests:</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="n">pkg</span><span class="o">.</span><span class="na">cucumber</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">io.cucumber.java.Before</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.springframework.boot.test.context.SpringBootTest</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.springframework.test.context.ActiveProfiles</span><span class="o">;</span>
+
+<span class="nd">@SpringBootTest</span>
+<span class="nd">@AutoConfigureMockMvc</span>
+<span class="nd">@ActiveProfiles</span><span class="o">(</span><span class="s">"test"</span><span class="o">)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">CucumberContextConfiguration</span> <span class="o">{</span>
+
+    <span class="nd">@Before</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setupCucumberSpringContext</span><span class="o">()</span> <span class="o">{</span>
+        <span class="c1">// Dummy method so cucumber will recognize this class as glue</span>
+        <span class="c1">// and use its context configuration.</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div> <p>Here I made use of three Spring annotations, but you can use any that you need in your context. With a setup like this, no context definitions are required in any of the actual Cucumber test files.</p> <p>With those two files done, we’re ready to write our first Cucumber test. In general, each feature file will have a corresponding Java test file. In this post we’ll only work with one feature (<code class="highlighter-rouge">list_item_for_sale.feature</code>), but it’s easy to add more. Our corresponding test file for this feature will be <code class="highlighter-rouge">ListItemForSaleIT.java</code>:</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="n">pkg</span><span class="o">.</span><span class="na">cucumber</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">io.cucumber.java.en.And</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">io.cucumber.java.en.Given</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">io.cucumber.java.en.Then</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">io.cucumber.java.en.When</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ListItemForSaleIT</span> <span class="o">{</span>
+
+    <span class="cm">/* Autowire anything you need here, or put global test variables */</span>
+
+    <span class="nd">@Given</span><span class="o">(</span><span class="s">"the User is logged in"</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">userIsLoggedIn</span><span class="o">()</span> <span class="o">{</span>
+        <span class="cm">/* Verify that user exists and is logged in */</span>
+    <span class="o">}</span>
+
+    <span class="nd">@And</span><span class="o">(</span><span class="s">"has an existing item listed for sale"</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">userHasItemListedForSale</span><span class="o">()</span> <span class="o">{</span>
+        <span class="cm">/* Verify that user has an item listed for sale */</span>
+    <span class="o">}</span>
+
+    <span class="nd">@When</span><span class="o">(</span><span class="s">"the User enters information about their item"</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">userEntersItemInformation</span><span class="o">()</span> <span class="o">{</span>
+        <span class="cm">/* Code that creates the item listing */</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Then</span><span class="o">(</span><span class="s">"the item is posted for sale"</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">itemIsPosted</span><span class="o">()</span> <span class="o">{</span>
+        <span class="cm">/* Verify correctness with assert statements */</span>
+    <span class="o">}</span>
+
+    <span class="nd">@When</span><span class="o">(</span><span class="s">"the User edits information about their item"</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">userEditsItem</span><span class="o">()</span> <span class="o">{</span>
+        <span class="cm">/* Code that updates the item listing */</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Then</span><span class="o">(</span><span class="s">"the item posting is updated"</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">itemIsUpdated</span><span class="o">()</span> <span class="o">{</span>
+        <span class="cm">/* Verify correctness with assert statements */</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div> <p>I didn’t put any actual test code, since the contents of each function will vary depending on the application and its implementation. If you have a RESTful API for you backend, <code class="highlighter-rouge">MockMvc</code> can be useful for testing your endpoints.</p> <p>As you can probably tell, each of the <code class="highlighter-rouge">@Given</code>, <code class="highlighter-rouge">@When</code>, etc. tags in the file match with keywords in Cucumber feature files. The strings within the tags can also be written as regular expressions for more powerful matching. This is essentially how feature files connect to Java test files.</p> <p>To actually run your Cucumber tests, run the following from the command line:</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mvn failsafe:integration-test
+</code></pre></div></div> <p>If everything went well, you’ll see the feature scenarios get printed along with the function that ran for each step.</p> <h2 id="cucumber-with-flask">Cucumber with Flask</h2> <p>Unlike Cucumber in Java, Cucumber’s support for Python is considered “semi-official” since the implementation is hosted outside of Cucumber (but still uses Cucumber components). The library we’ll be using is called <strong>behave</strong>, and it has a lot of similarities with what we saw in Java. The main difference (that I’ve noticed, at least) is that behave offers somewhat less functionality compared to Java, but the core functionality is still there. I also found the initial setup to be a bit trickier.</p> <p>Assuming you’ve already got a virtual environment set up and ready to go, you can install behave using pip:</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install behave
+</code></pre></div></div> <p>In the rest of this section we’ll be dealing with a Flask app that has the following structure:</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|-- app-name/
+    |-- backend/
+        |-- tests/
+        |-- features/
+            |-- steps/
+                |-- list_item_for_sale.py
+            |-- environment.py
+            |-- list_item_for_sale.feature
+        |-- requirements.txt
+        |-- config.py
+        |-- manage.py
+        |-- app/
+            |-- main/
+                |-- __init_.py
+                |-- views.py
+            |-- other_blueprint/
+	            |-- __init_.py
+	            |-- views.py
+            |-- __init__.py
+</code></pre></div></div> <p>To start, we’ll take a look at the contents of the <code class="highlighter-rouge">features</code> folder. First up is the <code class="highlighter-rouge">environment.py</code> file:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">behave</span> <span class="kn">import</span> <span class="n">fixture</span><span class="p">,</span> <span class="n">use_fixture</span>
+<span class="kn">from</span> <span class="nn">app</span> <span class="kn">import</span> <span class="n">create_app</span><span class="p">,</span> <span class="n">db</span>
+
+<span class="o">@</span><span class="n">fixture</span>
+<span class="k">def</span> <span class="nf">app_client</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="n">context</span><span class="o">.</span><span class="n">app</span> <span class="o">=</span> <span class="n">create_app</span><span class="p">(</span><span class="s">"testing"</span><span class="p">)</span>
+    <span class="n">context</span><span class="o">.</span><span class="n">app_context</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">app</span><span class="o">.</span><span class="n">app_context</span><span class="p">()</span>
+    <span class="n">context</span><span class="o">.</span><span class="n">app_context</span><span class="o">.</span><span class="n">push</span><span class="p">()</span>
+    <span class="n">db</span><span class="o">.</span><span class="n">create_all</span><span class="p">()</span>
+
+
+<span class="k">def</span> <span class="nf">before_feature</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">feature</span><span class="p">):</span>
+    <span class="n">use_fixture</span><span class="p">(</span><span class="n">app_client</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span>
+</code></pre></div></div> <p>Similar to the two Java files we had, this file defines the Cucumber environment that will be used to run our test files. We initialize our Flask app in <code class="highlighter-rouge">testing</code> mode, push the app context, and initialize the database (if applicable). The <code class="highlighter-rouge">before_feature</code> method is derived from <a href="https://behave.readthedocs.io/en/latest/usecase_flask.html">this page</a> in the behave documentation, which shows how to integrate behave with Flask.</p> <p>The next file in the <code class="highlighter-rouge">features</code> folder is the feature file itself, but this is the same as before. One thing to note is that behave translates <code class="highlighter-rouge">And</code> and <code class="highlighter-rouge">But</code> keywords to take the name of their preceding step—for example:</p> <div class="language-cucumber highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">Given </span>the User is logged in
+<span class="nf">And </span>has an existing item listed for sale
+</code></pre></div></div> <p>Will be interpreted by behave as:</p> <div class="language-cucumber highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">Given </span>the User is logged in
+<span class="nf">Given </span>has an existing item listed for sale
+</code></pre></div></div> <p>So we should only use the <code class="highlighter-rouge">@given</code>, <code class="highlighter-rouge">@when</code> and <code class="highlighter-rouge">@then</code> decorators in our test files. Next, we can move on to the <code class="highlighter-rouge">list_item_for_sale.py</code> test file:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">behave</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="o">@</span><span class="n">given</span><span class="p">(</span><span class="s">"the User is logged in"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">user_is_logged_in</span><span class="p">(</span><span class="n">context</span><span class="p">):</span>
+    <span class="k">assert</span> <span class="bp">True</span>
+
+
+<span class="o">@</span><span class="n">when</span><span class="p">(</span><span class="s">"the User enters information about their item"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">user_enters_item_information</span><span class="p">(</span><span class="n">context</span><span class="p">):</span>
+    <span class="k">assert</span> <span class="bp">True</span>
+
+
+<span class="o">@</span><span class="n">then</span><span class="p">(</span><span class="s">"the item is posted for sale"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">item_is_posted</span><span class="p">(</span><span class="n">context</span><span class="p">):</span>
+    <span class="k">assert</span> <span class="bp">True</span>
+
+
+<span class="o">@</span><span class="n">given</span><span class="p">(</span><span class="s">"has an existing item listed for sale"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">user_has_item_listed_for_sale</span><span class="p">(</span><span class="n">context</span><span class="p">):</span>
+    <span class="k">assert</span> <span class="bp">True</span>
+
+
+<span class="o">@</span><span class="n">when</span><span class="p">(</span><span class="s">"the User edits information about their item"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">user_edits_item</span><span class="p">(</span><span class="n">context</span><span class="p">):</span>
+    <span class="k">assert</span> <span class="bp">True</span>
+
+
+<span class="o">@</span><span class="n">then</span><span class="p">(</span><span class="s">"the item posting is updated"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">item_is_updated</span><span class="p">(</span><span class="n">context</span><span class="p">):</span>
+    <span class="k">assert</span> <span class="bp">True</span>
+
+</code></pre></div></div> <p>As before, I’ve left the actual methods unimplemented since the implementation will vary greatly depending on the app. Each method has access to a <code class="highlighter-rouge">context</code> variable, which contains some data about each scenario/step. Most of the time you probably won’t need to use this variable, but if you think you might need to the official <a href="https://behave.readthedocs.io/en/latest/tutorial.html">behave documentation</a> has lots of examples that use it.</p> <p>At this point we’re almost done, we just need a way to actually run the Cucumber tests. I managed (no pun intended) to do this by adding a command to the <code class="highlighter-rouge">manage.py</code> file:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">app</span> <span class="kn">import</span> <span class="n">create_app</span><span class="p">,</span> <span class="n">db</span>
+
+<span class="n">app</span> <span class="o">=</span> <span class="n">create_app</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s">"FLASK_CONFIG"</span><span class="p">)</span> <span class="ow">or</span> <span class="s">"default"</span><span class="p">)</span>
+<span class="n">manager</span> <span class="o">=</span> <span class="n">Manager</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
+<span class="n">migrate</span> <span class="o">=</span> <span class="n">Migrate</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="n">db</span><span class="p">)</span>
+
+<span class="o">...</span>
+
+<span class="o">@</span><span class="n">manager</span><span class="o">.</span><span class="n">command</span>
+<span class="k">def</span> <span class="nf">behave</span><span class="p">():</span>
+    <span class="s">"""Run the behave tests."""</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s">"behave"</span><span class="p">)</span>
+
+<span class="o">...</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+    <span class="n">manager</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</code></pre></div></div> <p>Then to run the tests:</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python manage.py behave
+</code></pre></div></div> <p>And we’re done!</p> <h2 id="conclusion">Conclusion</h2> <p>I hope you found this post helpful if you’ve been looking to add Cucumber to your project(s). There are of course other ways to get Cucumber set up in Spring and Flask, but this is just personally how I’ve done it. This is also the first time I’ve done a more in-depth technical tutorial, so please let me know if anything seems wrong or if you have any other feedback in general. Thanks for reading, and I’ll see you next month with a new post!</p> <aside class="share"> <p>If you liked this article and think others should read it, please share it on <a href="http://twitter.com/share?text=Getting Started with Cucumber&amp;url=http://localhost:4000/2020/getting-started-with-cucumber/&amp;via=" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">Twitter</a> or <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/2020/getting-started-with-cucumber/" onclick="window.open(this.href, 'facebook-share', 'width=550,height=235');return false;">Facebook</a>.</p> </aside> </div> </article> <aside id="comments" class="disqus"> <div class="container"> <h3><i class="icon icon-comments-o"></i> Comments</h3> <div id="disqus_thread"></div> <script type="text/javascript"> var disqus_shortname = 'albertkragl'; var disqus_identifier = '/2020/getting-started-with-cucumber'; var disqus_title = 'Getting Started with Cucumber'; var disqus_url = 'http://localhost:4000/2020/getting-started-with-cucumber/'; /*var disqus_developer = 1;*/ (function() { var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true; dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js'; (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq); })(); </script> <noscript> Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a> </noscript> </div> </aside> <footer class="site-footer"> <div class="container"> <small class="block">&copy; 2020 Albert Kragl &middot; &lt;/&gt; Powered by <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/heiswayi/thinkspace">Thinkspace theme</a></small> </div> </footer> </main> <script type="text/javascript"> var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-130499534-1']); _gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script> </body> </html>
