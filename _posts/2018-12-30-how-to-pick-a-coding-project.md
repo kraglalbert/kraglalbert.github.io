@@ -4,6 +4,7 @@ title: "How to Pick a Coding Project"
 comments: true
 description: "What should you build?"
 keywords: "blog, coding, project, personal, resume, internship, internships"
+reading_time: 2
 ---
 
 For most people, getting your first software internship will be pretty tough. You have to somehow show recruiters and interviewers that you can code, but you can't do that with relevant work experience (because you have none, in most cases). So how can you demonstrate your abilities?

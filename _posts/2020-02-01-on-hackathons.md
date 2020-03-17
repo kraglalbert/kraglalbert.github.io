@@ -4,6 +4,7 @@ title: "On Hackathons"
 comments: true
 description: "Reflecting on my earliest hackathons as well as my most recent ones."
 keywords: "hackathons, coding, projects"
+reading_time: 3
 ---
 
 Since my first year of university, I've been consistently going to a few hackathons every year. I'm now in my fourth year of university, and I've learned a good amount since my first hackathon. In this post I'll reflect on what I learned at each one I did, and hopefully you can get something out of reading this too.

@@ -4,6 +4,7 @@ title: "The First Post"
 comments: true
 description: ""
 keywords: "blog, first, post"
+reading_time: 1
 ---
 
 What's this? A blog post? The thing everyone in tech is doing nowadays?
@@ -20,7 +21,7 @@ I suck at frontend stuff.
 <br>
 <br>
 
-I'm pretty good at algorithms and all that, but the Holy Trinity of HTML/CSS/Javascript historically hasn't been my thing. After initially trying to implement the whole website from scratch, I caved about 24 hours later and decided to use a nice Jekyll template instead, which is what you're seeing now. It looks probably about 100 times better, and I even managed to recycle some of the code I wrote initially, which was nice. 
+I'm pretty good at algorithms and all that, but the Holy Trinity of HTML/CSS/Javascript historically hasn't been my thing. After initially trying to implement the whole website from scratch, I caved about 24 hours later and decided to use a nice Jekyll template instead, which is what you're seeing now. It looks probably about 100 times better, and I even managed to recycle some of the code I wrote initially, which was nice.
 
 However, at the time of writing this, the website design under-the-hood is definitely **not** good. Pretty much anything that's well done can be attributed to the template, and the rest is just me messing around with stuff I don't really understand yet. My resume page might look okay now, but the way I implemented that probably isn't great.
 

@@ -4,9 +4,10 @@ title: "How Python Stole My Heart"
 comments: true
 description: "After years of barely using it, I've finally started to appreciate Python."
 keywords: "blog, python, intern, internships, flask, webdev, developer, coding, fullstack"
+reading_time: 2
 ---
 
-I had first heard of Python during my second year of university, when my dad told me about how it was a cool language that "looked like plain English". At the time I only knew Java, which definitely does *not* look like plain English, so this seemed interesting. However, I was still relatively new to programming, so I convinced myself that I should focus on the one language I knew and not spread myself too thin trying to learn multiple different languages.
+I had first heard of Python during my second year of university, when my dad told me about how it was a cool language that "looked like plain English". At the time I only knew Java, which definitely does _not_ look like plain English, so this seemed interesting. However, I was still relatively new to programming, so I convinced myself that I should focus on the one language I knew and not spread myself too thin trying to learn multiple different languages.
 
 That was the first time I dismissed Python, and it wouldn't be the last!
 
