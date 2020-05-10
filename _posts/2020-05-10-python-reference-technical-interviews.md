@@ -22,6 +22,7 @@ reading_time: 3
    - [Custom Sort Function](#custom-sort-function)
    - [Lambdas](#lambdas)
    - [String Operations](#string-operations)
+   - [List Comprehensions](#list-comprehensions)
 
 **Last updated:** May 10th, 2020
 
@@ -441,6 +442,24 @@ my_str.split(" ")
 # replace contents of a string
 
 my_str.replace(" ", ", ")
+```
+
+#### List Comprehensions
+
+List comprehensions offer a short and quick way to create lists. The example below shows how a list can be created using the `map` function and how the same list can be created using comprehensions:
+
+```python
+# with the map function
+
+squares = list(map(lambda x: x**2, range(10)))
+
+# with comprehensions
+
+squares = [x**2 for x in range(10)]
+
+# comprehension with an if clause
+
+squares = [x**2 for x in range(10) if x % 2 == 0]
 ```
 
 Thanks for reading! If you found this helpful or have any corrections/suggestions, please let me know!
