@@ -225,7 +225,7 @@ my_dict["key"]
 
 # get entry with default value
 
-my_dict.get("key", default="")
+my_dict.get("key", "default")
 
 # check if key exists
 
