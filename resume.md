@@ -21,7 +21,7 @@ permalink: /resume/
     color: #080808;
     visibility: hidden;
     opacity: 0;
-  
+
     /* transition effect. not necessary */
     transition: opacity .2s, visibility .2s;
 }
@@ -30,7 +30,7 @@ permalink: /resume/
 .icon:hover {opacity: 0.7;}
 @media screen and (max-width: 480px) {
     .education-text-container {
-        float:right; 
+        float:right;
         text-align: right;
         width: 150px;
     }
@@ -123,8 +123,6 @@ permalink: /resume/
 - **Budgie**: Developed a web application that allows individuals to keep track of their monthly expenses.
 - **Profound Sound (iOS App):** Created to help amateur guitarists configure their guitar recording setup. Was available on the App Store from 2014 to 2016.
 - **Get J&uuml;ge (iOS App):** Created to help users track progress for each exercise in their workout.
-- **git-simple**: Created a command-line tool with custom commands to simplify common git workflows and operations.
-- **McGillUltimate.ca:** Part of the development team working on the <a href="https://mcgillultimate.ca" target="_blank">website</a> for McGill’s Ultimate Frisbee team.
 
 <!-- Skills section -->
 <div class="h-line"></div>
@@ -186,13 +184,13 @@ permalink: /resume/
         <img class="icon" src="{{site.baseurl}}/assets/images/react-logo.png">
         <p class="img__description">React</p>
     </div>
-</div> 
+</div>
 <!-- Extracurriculars section -->
 <div class="h-line"> </div>
 <h1>extracurriculars and awards:</h1>
 
 - **Hack4Impact McGill:** President and co-founder of the Hack4Impact chapter at McGill University, which builds software for non-profit organizations to help drive positive social impact.
-- **YouTube/Music:** Created a <a href="https://www.youtube.com/user/TheFenderrocker" target="_blank">YouTube channel</a> with over 20,000 subscribers and 5 million total views. Features original music and cover songs, with original songs available on all major streaming platforms.
+- **YouTube/Music:** Created a <a href="https://www.youtube.com/user/TheFenderrocker" target="_blank">YouTube channel</a> with over 25,000 subscribers and 6 million total views. Features original music and cover songs, with original songs available on all major streaming platforms.
 - **Ultimate Frisbee:** Varsity athlete and captain on the McGill Ultimate Team. Won a <a href="http://ucm.canadianultimate.com/c/2018/10/23/2018-canadian-university-ultimate-championships-open-division-recap/" target="_blank">silver medal</a> at Canadian University Nationals in 2018.
 - **Excellence in Written Communication Award:** Awarded best research paper out of 259 students in CCOM 206 (Communication in Engineering) for Winter and Summer 2017 at McGill.
 - **Schulich Leader Scholarship:** Given to 50 students in Canada going into engineering and science studies every year.
