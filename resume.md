@@ -49,7 +49,7 @@ permalink: /resume/
     </div>
     <div>
         <h1>McGill University</h1>
-        <p>B.S.E in Software Engineering; CGPA: 3.81 / 4.00</p>
+        <p>B.S.E in Software Engineering; CGPA: 3.84 / 4.00</p>
     </div>
 </div>
 
