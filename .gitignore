@@ -1,0 +1,6 @@
+.jekyll-cache/
+.vscode/
+.sass-cache/
+
+Gemfile.lock
+.DS_Store

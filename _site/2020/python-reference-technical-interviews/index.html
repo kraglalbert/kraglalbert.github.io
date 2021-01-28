@@ -18,27 +18,27 @@
 </span>
 <span class="c1"># if no index is specified, then removes the element at the end of the list
 </span>
-<span class="n">my_list</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="n">my_list</span><span class="p">.</span><span class="n">pop</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 
 <span class="c1"># remove first element with value equal to x
 </span>
 <span class="c1"># raises a ValueError if no element with that value exists
 </span>
-<span class="n">my_list</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">my_list</span><span class="p">.</span><span class="n">remove</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 
 <span class="c1"># add element to the end of the list
 </span>
 <span class="c1"># my_list then contains [1, 2, 3, "Hello"]
 </span>
-<span class="n">my_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s">"Hello"</span><span class="p">)</span>
+<span class="n">my_list</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">"Hello"</span><span class="p">)</span>
 
 <span class="c1"># add all elements from another iterable
 </span>
-<span class="n">my_list</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">another_list</span><span class="p">)</span>
+<span class="n">my_list</span><span class="p">.</span><span class="n">extend</span><span class="p">(</span><span class="n">another_list</span><span class="p">)</span>
 
 <span class="c1"># insert item at index i
 </span>
-<span class="n">my_list</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+<span class="n">my_list</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
 
 <span class="c1"># get length of list
 </span>
@@ -46,15 +46,15 @@
 
 <span class="c1"># count number of occurrences of element x
 </span>
-<span class="n">my_list</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">my_list</span><span class="p">.</span><span class="n">count</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 
 <span class="c1"># get index of element x
 </span>
-<span class="n">my_list</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">my_list</span><span class="p">.</span><span class="n">index</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 
 <span class="c1"># clear the entire list
 </span>
-<span class="n">my_list</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="n">my_list</span><span class="p">.</span><span class="n">clear</span><span class="p">()</span>
 </code></pre></div></div> <p>Slicing and sublists:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># get a sublist from index i (inclusive) to j (non-inclusive)
 </span>
 <span class="n">my_slice</span> <span class="o">=</span> <span class="n">my_list</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">j</span><span class="p">]</span>
@@ -78,11 +78,11 @@
 <span class="n">my_slice</span> <span class="o">=</span> <span class="n">my_list</span><span class="p">[</span><span class="o">-</span><span class="n">n</span><span class="p">::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 </code></pre></div></div> <p>Note that a slice creates a shallow copy of the original list, so it is safe to modify without changing the original list.</p> <h4 id="stacks">Stacks</h4> <p>Stacks in Python can be implemented with lists. This is shown below:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># push onto the stack
 </span>
-<span class="n">my_stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+<span class="n">my_stack</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
 
 <span class="c1"># pop from the stack
 </span>
-<span class="n">my_stack</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+<span class="n">my_stack</span><span class="p">.</span><span class="n">pop</span><span class="p">()</span>
 </code></pre></div></div> <h4 id="queues">Queues</h4> <p>Queues could also be implemented using lists, but removing from the front isn’t an efficient operation with lists. Instead, the official documentation recommends using a deque:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">deque</span>
 
 <span class="c1"># initialize empty queue
@@ -91,11 +91,11 @@
 
 <span class="c1"># insert into queue
 </span>
-<span class="n">queue</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">queue</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 
 <span class="c1"># remove from queue
 </span>
-<span class="n">queue</span><span class="o">.</span><span class="n">popleft</span><span class="p">()</span>
+<span class="n">queue</span><span class="p">.</span><span class="n">popleft</span><span class="p">()</span>
 </code></pre></div></div> <h4 id="tuples">Tuples</h4> <p>Tuples can be useful for wrapping up multiple variables in a single object. Note that they are immutable and must have their values defined when instantiated. However, tuples <em>can</em> contain mutable objects, such as lists. They can also contain other tuples.</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># define a tuple
 </span>
 <span class="n">my_tuple</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="s">"Hello"</span><span class="p">,</span> <span class="mi">45</span>
@@ -109,7 +109,7 @@
 
 <span class="c1"># add to set
 </span>
-<span class="n">my_set</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+<span class="n">my_set</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
 
 <span class="c1"># check if x is in the set
 </span>
@@ -117,7 +117,7 @@
 
 <span class="c1"># remove x from the set
 </span>
-<span class="n">my_set</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">my_set</span><span class="p">.</span><span class="n">remove</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 
 <span class="c1"># take difference of two sets
 </span>
@@ -133,7 +133,7 @@
 
 <span class="c1"># clear the set
 </span>
-<span class="n">my_set</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="n">my_set</span><span class="p">.</span><span class="n">clear</span><span class="p">()</span>
 </code></pre></div></div> <h4 id="dictionaries">Dictionaries</h4> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># create empty dictionary
 </span>
 <span class="n">my_dict</span> <span class="o">=</span> <span class="p">{}</span>
@@ -148,7 +148,7 @@
 
 <span class="c1"># get entry with default value
 </span>
-<span class="n">my_dict</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"key"</span><span class="p">,</span> <span class="s">"default"</span><span class="p">)</span>
+<span class="n">my_dict</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">"key"</span><span class="p">,</span> <span class="s">"default"</span><span class="p">)</span>
 
 <span class="c1"># check if key exists
 </span>
@@ -156,15 +156,15 @@
 
 <span class="c1"># get all items as tuple pairs
 </span>
-<span class="n">my_dict</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+<span class="n">my_dict</span><span class="p">.</span><span class="n">items</span><span class="p">()</span>
 
 <span class="c1"># get all keys
 </span>
-<span class="n">my_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+<span class="n">my_dict</span><span class="p">.</span><span class="n">keys</span><span class="p">()</span>
 
 <span class="c1"># get all values
 </span>
-<span class="n">my_dict</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
+<span class="n">my_dict</span><span class="p">.</span><span class="n">values</span><span class="p">()</span>
 
 <span class="c1"># remove a key-value pair
 </span>
@@ -172,7 +172,7 @@
 
 <span class="c1"># clear dictionary
 </span>
-<span class="n">my_dict</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="n">my_dict</span><span class="p">.</span><span class="n">clear</span><span class="p">()</span>
 </code></pre></div></div> <h4 id="heaps">Heaps</h4> <p>For a min heap with <code class="highlighter-rouge">heapq</code>:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">heapq</span>
 
 <span class="c1"># create empty heap
@@ -183,37 +183,37 @@
 </span>
 <span class="c1"># modifies the list in-place in linear time
 </span>
-<span class="n">heapq</span><span class="o">.</span><span class="n">heapify</span><span class="p">(</span><span class="n">heap</span><span class="p">)</span>
+<span class="n">heapq</span><span class="p">.</span><span class="n">heapify</span><span class="p">(</span><span class="n">heap</span><span class="p">)</span>
 
 <span class="c1"># push onto the heap
 </span>
-<span class="n">heapq</span><span class="o">.</span><span class="n">heappush</span><span class="p">(</span><span class="n">heap</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">heapq</span><span class="p">.</span><span class="n">heappush</span><span class="p">(</span><span class="n">heap</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 
 <span class="c1"># remove smallest item from the top of the heap
 </span>
-<span class="n">heapq</span><span class="o">.</span><span class="n">heappop</span><span class="p">(</span><span class="n">heap</span><span class="p">)</span>
+<span class="n">heapq</span><span class="p">.</span><span class="n">heappop</span><span class="p">(</span><span class="n">heap</span><span class="p">)</span>
 
 <span class="c1"># access smallest item without removing it
 </span>
 <span class="n">heap</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </code></pre></div></div> <p>One thing to note is that pushing tuples into the heap with <code class="highlighter-rouge">heapq</code> will result in the tuples being sorted by their first element. For example:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">heap</span> <span class="o">=</span> <span class="p">[]</span>
 
-<span class="n">heapq</span><span class="o">.</span><span class="n">heappush</span><span class="p">(</span><span class="n">heap</span><span class="p">,</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s">'a'</span><span class="p">))</span>
-<span class="n">heapq</span><span class="o">.</span><span class="n">heappush</span><span class="p">(</span><span class="n">heap</span><span class="p">,</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s">'b'</span><span class="p">))</span>
+<span class="n">heapq</span><span class="p">.</span><span class="n">heappush</span><span class="p">(</span><span class="n">heap</span><span class="p">,</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s">'a'</span><span class="p">))</span>
+<span class="n">heapq</span><span class="p">.</span><span class="n">heappush</span><span class="p">(</span><span class="n">heap</span><span class="p">,</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s">'b'</span><span class="p">))</span>
 
 <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">len</span><span class="p">(</span><span class="n">heap</span><span class="p">):</span>
     <span class="c1"># prints 'a' then 'b'
 </span>
-    <span class="k">print</span><span class="p">(</span><span class="n">heapq</span><span class="o">.</span><span class="n">heappop</span><span class="p">(</span><span class="n">heap</span><span class="p">)[</span><span class="mi">1</span><span class="p">])</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">heapq</span><span class="p">.</span><span class="n">heappop</span><span class="p">(</span><span class="n">heap</span><span class="p">)[</span><span class="mi">1</span><span class="p">])</span>
 </code></pre></div></div> <p>Max heaps are a little trickier. If the values being placed in the heap are simple numbers, then multiplying them by -1 will effectively invert their ordering. However, you have to remember to multiply numbers by -1 again once they are pulled out of the heap.</p> <h4 id="linked-lists">Linked Lists</h4> <p>Linked lists in Python can be defined as follows:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">ListNode</span><span class="p">:</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">val</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="nb">next</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">val</span> <span class="o">=</span> <span class="n">val</span>
-        <span class="bp">self</span><span class="o">.</span><span class="nb">next</span> <span class="o">=</span> <span class="nb">next</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">val</span> <span class="o">=</span> <span class="n">val</span>
+        <span class="bp">self</span><span class="p">.</span><span class="nb">next</span> <span class="o">=</span> <span class="nb">next</span>
 </code></pre></div></div> <h4 id="binary-trees">Binary Trees</h4> <p>Binary trees in Python can be defined as follows:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">TreeNode</span><span class="p">:</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">val</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">left</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">val</span> <span class="o">=</span> <span class="n">val</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">left</span> <span class="o">=</span> <span class="n">left</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">right</span> <span class="o">=</span> <span class="n">right</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">val</span> <span class="o">=</span> <span class="n">val</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">left</span> <span class="o">=</span> <span class="n">left</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">right</span> <span class="o">=</span> <span class="n">right</span>
 </code></pre></div></div> <h2 id="syntax">Syntax</h2> <h4 id="bitwise-operations">Bitwise Operations</h4> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># bitwise AND
 </span>
 <span class="n">x</span> <span class="o">&amp;</span> <span class="n">y</span>
@@ -259,15 +259,15 @@
 
 <span class="c1"># basic sort from low to high
 </span>
-<span class="n">my_list</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="n">my_list</span><span class="p">.</span><span class="n">sort</span><span class="p">()</span>
 
 <span class="c1"># reverse sort from high to low
 </span>
-<span class="n">my_list</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">my_list</span><span class="p">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 
 <span class="c1"># sort with custom key function
 </span>
-<span class="n">my_list</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="p">(</span><span class="k">lambda</span> <span class="n">val</span> <span class="p">:</span> <span class="n">val</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+<span class="n">my_list</span><span class="p">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="p">(</span><span class="k">lambda</span> <span class="n">val</span> <span class="p">:</span> <span class="n">val</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
 </code></pre></div></div> <h4 id="lambdas">Lambdas</h4> <p>Lambdas are anonymous functions in Python. The general syntax is <code class="highlighter-rouge">lambda &lt;arguments&gt; : &lt;expression&gt;</code>.</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># simple function that doubles a number
 </span>
 <span class="n">my_func</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span> <span class="p">:</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span>
@@ -277,35 +277,35 @@
 <span class="n">my_func</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="p">:</span> <span class="n">x</span><span class="o">*</span><span class="n">y</span>
 </code></pre></div></div> <h4 id="string-operations">String Operations</h4> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># convert string to lowercase
 </span>
-<span class="n">my_str</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+<span class="n">my_str</span><span class="p">.</span><span class="n">lower</span><span class="p">()</span>
 
 <span class="c1"># convert string to uppercase
 </span>
-<span class="n">my_str</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+<span class="n">my_str</span><span class="p">.</span><span class="n">upper</span><span class="p">()</span>
 
 <span class="c1"># interleave a string with another string
 </span>
 <span class="c1"># output: "H e l l o"
 </span>
-<span class="s">" "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s">"Hello"</span><span class="p">)</span>
+<span class="s">" "</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="s">"Hello"</span><span class="p">)</span>
 
 <span class="c1"># join with a list of strings
 </span>
 <span class="c1"># output: "A, B, C"
 </span>
-<span class="s">", "</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s">"A"</span><span class="p">,</span> <span class="s">"B"</span><span class="p">,</span> <span class="s">"C"</span><span class="p">])</span>
+<span class="s">", "</span><span class="p">.</span><span class="n">join</span><span class="p">([</span><span class="s">"A"</span><span class="p">,</span> <span class="s">"B"</span><span class="p">,</span> <span class="s">"C"</span><span class="p">])</span>
 
 <span class="c1"># output: "Hello world"
 </span>
-<span class="s">""</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s">"Hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">])</span>
+<span class="s">""</span><span class="p">.</span><span class="n">join</span><span class="p">([</span><span class="s">"Hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">])</span>
 
 <span class="c1"># split a string by specified delimiter
 </span>
-<span class="n">my_str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">" "</span><span class="p">)</span>
+<span class="n">my_str</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">" "</span><span class="p">)</span>
 
 <span class="c1"># replace contents of a string
 </span>
-<span class="n">my_str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">" "</span><span class="p">,</span> <span class="s">", "</span><span class="p">)</span>
+<span class="n">my_str</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s">" "</span><span class="p">,</span> <span class="s">", "</span><span class="p">)</span>
 </code></pre></div></div> <h4 id="list-comprehensions">List Comprehensions</h4> <p>List comprehensions offer a short and quick way to create lists. The example below shows how a list can be created using the <code class="highlighter-rouge">map</code> function and how the same list can be created using comprehensions:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># with the map function
 </span>
 <span class="n">squares</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)))</span>
@@ -317,4 +317,4 @@
 <span class="c1"># comprehension with an if clause
 </span>
 <span class="n">squares</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
-</code></pre></div></div> <p>Thanks for reading! If you found this helpful or have any corrections/suggestions, please let me know!</p> <aside class="share"> <p>If you liked this article and think others should read it, please share it on <a href="http://twitter.com/share?text=Python Reference for Technical Interviews&amp;url=http://localhost:4000/2020/python-reference-technical-interviews/&amp;via=" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">Twitter</a> or <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/2020/python-reference-technical-interviews/" onclick="window.open(this.href, 'facebook-share', 'width=550,height=235');return false;">Facebook</a>.</p> </aside> </div> </article> <aside id="comments" class="disqus"> <div class="container"> <h3><i class="icon icon-comments-o"></i> Comments</h3> <div id="disqus_thread"></div> <script type="text/javascript"> var disqus_shortname = 'albertkragl'; var disqus_identifier = '/2020/python-reference-technical-interviews'; var disqus_title = 'Python Reference for Technical Interviews'; var disqus_url = 'http://localhost:4000/2020/python-reference-technical-interviews/'; /*var disqus_developer = 1;*/ (function() { var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true; dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js'; (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq); })(); </script> <noscript> Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a> </noscript> </div> </aside> <footer class="site-footer"> <div class="container"> <small class="block">&copy; 2020 Albert Kragl &middot; &lt;/&gt; Powered by <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/heiswayi/thinkspace">Thinkspace theme</a></small> </div> </footer> </main> <script type="text/javascript"> var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-130499534-1']); _gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script> </body> </html>
+</code></pre></div></div> <p>Thanks for reading! If you found this helpful or have any corrections/suggestions, please let me know!</p> <aside class="share"> <p>If you liked this article and think others should read it, please share it on <a href="http://twitter.com/share?text=Python Reference for Technical Interviews&amp;url=http://localhost:4000/2020/python-reference-technical-interviews/&amp;via=" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">Twitter</a> or <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/2020/python-reference-technical-interviews/" onclick="window.open(this.href, 'facebook-share', 'width=550,height=235');return false;">Facebook</a>.</p> </aside> </div> </article> <aside id="comments" class="disqus"> <div class="container"> <h3><i class="icon icon-comments-o"></i> Comments</h3> <div id="disqus_thread"></div> <script type="text/javascript"> var disqus_shortname = 'albertkragl'; var disqus_identifier = '/2020/python-reference-technical-interviews'; var disqus_title = 'Python Reference for Technical Interviews'; var disqus_url = 'http://localhost:4000/2020/python-reference-technical-interviews/'; /*var disqus_developer = 1;*/ (function() { var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true; dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js'; (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq); })(); </script> <noscript> Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a> </noscript> </div> </aside> <footer class="site-footer"> <div class="container"> <small class="block">&copy; 2021 Albert Kragl &middot; &lt;/&gt; Powered by <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/heiswayi/thinkspace">Thinkspace theme</a></small> </div> </footer> </main> <script type="text/javascript"> var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-130499534-1']); _gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script> </body> </html>

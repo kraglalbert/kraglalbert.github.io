@@ -4,7 +4,7 @@ title: about
 permalink: /about/
 ---
 
-I'm a fourth-year undergraduate student at McGill University currently studying Software Engineering. I also do music and ultimate frisbee.
+I'm a fifth-year undergraduate student at McGill University currently studying Software Engineering. I also write and record music.
 
 <br>
 
@@ -20,9 +20,9 @@ My first proper experience with programming came in my second semester of first 
 
 I did my first software internship in summer 2018 at a small but fast-growing adtech company, which was a great experience. I learned a lot in the span of a few months and got a glimpse into what the real world of software development was like. It was around this time I decided to switch into Software Engineering as well, and I've had no regrets so far.
 
-In Fall 2019 I co-founded the first Canadian chapter of [Hack4Impact](https://hack4impact.org/) at McGill, where we build software for non-profit organizations to help drive positive social impact. Check out our projects [here](https://github.com/hack4impact-mcgill)!
+In Fall 2019 I co-founded the first Canadian chapter of [Hack4Impact](https://hack4impact.org/) at McGill, where we build software for non-profit organizations to help drive positive social impact. Check out our projects [here](https://github.com/hack4impact-mcgill) and our website [here](https://mcgill.hack4impact.org/)!
 
-I was a Software Engineer Intern at Facebook this past summer at their Menlo Park office, and I'll be interning there again remotely this summer.
+In Summer 2019 I was a Software Engineer Intern at Facebook in their Menlo Park office, and in Summer 2020 I did my second internship with Facebook remotely in Montral. I'll be starting work full-time there in September 2021.
 
 <br>
 
@@ -32,10 +32,4 @@ I started playing guitar in 2008, when I decided to take classical guitar lesson
 
 Learning guitar has been one of the most rewarding journeys I've experienced so far. What started as a passion for guitar slowly but surely became a passion for music in general; nowadays I run a [YouTube channel](https://www.youtube.com/user/TheFenderrocker) where I post guitar covers and remixes, and I've also released some original music on things like [Spotify](https://open.spotify.com/artist/5fQpjdNuF9iQSFsEt7noxH), [iTunes](https://itunes.apple.com/us/artist/albert-kragl/1147843944), etc. I self-taught myself essentially everything about music production and recording as well, and I'm pretty happy with the quality I'm able to produce nowadays.
 
-My last release was in June 2017, and I've been working on a new EP that I'm aiming to release sometime in the middle of 2020.
-
-<br>
-
-#### ultimate frisbee
-
-Ultimate frisbee (usually known as just Ultimate) entered my life when I started high school. Since then, I've played on several high-level teams, including the British Columbia provincial team, Manic (one of the higher-level club teams in Montreal), and the McGill Ultimate Team.
+I released my latest EP in November 2020; you can listen to it on Spotify [here](https://open.spotify.com/artist/5fQpjdNuF9iQSFsEt7noxH).
