@@ -1,16 +1,16 @@
 # Site settings
-title_left: "pert"
-title_right: "sauce" # default: ""
-description: "Albert Kragl"
-keywords: "Jekyll, theme, free, download, SEO, blog, web, minimalist, thinkspace, albert, kragl, kraglalbert, pertsauce, pert"
+title_left: 'pert'
+title_right: 'sauce' # default: ""
+description: 'Albert Kragl'
+keywords: 'Jekyll, theme, free, download, SEO, blog, web, minimalist, thinkspace, albert, kragl, kraglalbert, pertsauce, pert'
 url: https://kraglalbert.github.io # site url
-baseurl: "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
-cover: "" # image uri like logo/cover image for site seo
+baseurl: '' # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
+cover: '' # image uri like logo/cover image for site seo
 
 google_analytics: UA-130499534-1
-twitter_username: ""
+twitter_username: ''
 comments_enabled: true # if enabled (set to true), please provide your disqus_username
-disqus_shortname: "albertkragl"
+disqus_shortname: 'albertkragl'
 postshare_enabled: true
 
 # Build settings
@@ -28,7 +28,7 @@ sass:
 
 # Author settings
 author:
-  name: "Albert Kragl"
+  name: 'Albert Kragl'
 
 plugins:
   - jekyll-sitemap
@@ -39,27 +39,25 @@ plugins:
 navbar:
   - slug: about
     title: About
-  - slug: resume
-    title: Resume
   - slug: contact
     title: Contact
 
 exclude:
   [
-    "gulp",
-    "node_modules",
-    "bower",
-    "bower_components",
-    "config.rb",
-    "src",
-    "Gemfile",
-    "Gemfile.lock",
-    ".rvmrc",
-    ".rbenv-version",
-    "package.json",
-    "gulpfile.js",
-    "README.md",
-    "Rakefile",
-    "changelog.md",
-    "script",
+    'gulp',
+    'node_modules',
+    'bower',
+    'bower_components',
+    'config.rb',
+    'src',
+    'Gemfile',
+    'Gemfile.lock',
+    '.rvmrc',
+    '.rbenv-version',
+    'package.json',
+    'gulpfile.js',
+    'README.md',
+    'Rakefile',
+    'changelog.md',
+    'script',
   ]
