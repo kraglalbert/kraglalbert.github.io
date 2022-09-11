@@ -4,7 +4,7 @@ title: "Internships: The LeetCode Grind"
 comments: true
 description: "My experience with preparing for technical interviews, and the things I learned along the way."
 keywords: "blog, internship, intern, internships, leetcode, grind, interviews"
-reading_time: 5
+reading_time: 8
 ---
 
 For my first post of 2019, I'll start a new series focused on software internships, where I'll write about the things I've learned and experienced related to them so far.

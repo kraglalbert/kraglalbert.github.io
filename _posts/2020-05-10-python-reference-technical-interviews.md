@@ -4,7 +4,7 @@ title: "Python Reference for Technical Interviews"
 comments: true
 description: "A quick reference so that you can get started using Python for technical interviews."
 keywords: "python, leetcode, technical interviews"
-reading_time: 3
+reading_time: 5
 ---
 
 1. [Data Structures](#data-structures)

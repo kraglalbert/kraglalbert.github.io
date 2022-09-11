@@ -8,7 +8,7 @@ Hey, I'm Albert.
 <br>
 
 <p align="center">
-    <img src ="{{site.baseurl}}/assets/images/me-circle-1000x1000.png" style="display: block; margin-left: auto; margin-right: auto; width:25%; min-width: 200px;"/>
+    <img src ="{{site.baseurl}}/assets/images/me-2022-circle.png" style="display: block; margin-left: auto; margin-right: auto; width:25%; min-width: 200px;"/>
 </p>
 
 I'm a 24-year-old Canadian with Serbian parents who is currently living in the U.S. I graduated from McGill University in 2021 with a degree in Software Engineering and I'm now working as a software engineer full-time.

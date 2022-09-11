@@ -4,7 +4,7 @@ title: "Getting Started with Cucumber"
 comments: true
 description: "Want to spice up your test suite? Get the non-technical stakeholders involved."
 keywords: "cucumber, gherkin, acceptance tests, testing"
-reading_time: 5
+reading_time: 8
 ---
 
 1. [Why Use Cucumber?](#why-use-cucumber)

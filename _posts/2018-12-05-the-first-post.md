@@ -4,7 +4,7 @@ title: "The First Post"
 comments: true
 description: ""
 keywords: "blog, first, post"
-reading_time: 1
+reading_time: 2
 ---
 
 What's this? A blog post? The thing everyone in tech is doing nowadays?
